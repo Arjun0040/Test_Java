@@ -1,0 +1,17 @@
+There are two main servlet types, generic and HTTP:
+
+Generic servlets
+
+Extend javax.servlet.GenericServlet.
+
+Are protocol independent. They contain no inherent HTTP support or any other transport protocol.
+
+HTTP servlets
+
+Extend javax.servlet.HttpServlet.
+
+Have built-in HTTP protocol support and are more useful in a Sun Java System Web Server environment.
+
+For both servlet types, you implement the constructor method init() and the destructor method destroy() to initialize or deallocate resources.
+
+All servlets must implement a service() method, which is responsible for handling servlet requests. For generic servlets, simply override the service method to provide routines for handling requests. HTTP servlets provide a service method that automatically routes the request to another method in the servlet based on which HTTP transfer method is used. So, for HTTP servlets, override doPost() to process POST requests, doGet() to process GET requests, and so on.

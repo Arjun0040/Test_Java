@@ -1,0 +1,5 @@
+Comment on learning process of web development: 
+	HTML -> defines what a web page consists of 
+	CSS -> defines how a web page looks. 
+	JS -> defines what each HTML should do. 
+	Java -> to be learnt before diving into advanced Java. Basic syntax and statements are to be known. 
